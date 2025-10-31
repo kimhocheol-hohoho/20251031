@@ -62,4 +62,10 @@ The script aligns trading days with complete data across all tickers, annualises
 
 ## Web dashboard
 
-An interactive-ready static site packages the descriptive statistics and efficient frontier visual in a single view. Open `web/index.html` in your browser (or serve the repository with `python -m http.server`) to explore the dashboard and revisit the analysis narrative alongside the SVG figure.
+An interactive-ready static site packages the descriptive statistics and efficient frontier visual in a single view. Open `web/index.html` directly in your browser or start the bundled development server:
+
+```bash
+python scripts/serve_dashboard.py
+```
+
+The server binds to `http://127.0.0.1:8000/` by default (falling back to a free port if needed) and rewrites the root path to the dashboard entry point so you can immediately explore the analysis and the efficient frontier figure.

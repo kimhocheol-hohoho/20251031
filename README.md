@@ -59,3 +59,7 @@ python scripts/efficient_frontier.py
 ```
 
 The script aligns trading days with complete data across all tickers, annualises their average returns and covariance, and saves the plot to `figures/efficient_frontier.svg`.
+
+## Web dashboard
+
+An interactive-ready static site packages the descriptive statistics and efficient frontier visual in a single view. Open `web/index.html` in your browser (or serve the repository with `python -m http.server`) to explore the dashboard and revisit the analysis narrative alongside the SVG figure.

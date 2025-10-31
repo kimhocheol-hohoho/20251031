@@ -1,0 +1,241 @@
+:root {
+  color-scheme: light dark;
+  font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+    Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #0b1620;
+  color: #f5f7fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at top, rgba(25, 118, 210, 0.35), transparent 55%),
+    linear-gradient(180deg, #07101a 0%, #0b1620 40%, #101f2e 100%);
+}
+
+.hero {
+  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, rgba(30, 136, 229, 0.65), rgba(13, 71, 161, 0.85));
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.25), transparent 60%),
+    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.15), transparent 65%);
+  pointer-events: none;
+}
+
+.hero__content {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+}
+
+.hero p {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+}
+
+.hero__cta {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+  background: #0d47a1;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero__cta:hover,
+.hero__cta:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(13, 71, 161, 0.3);
+}
+
+main {
+  flex: 1;
+  padding: 3rem 1.5rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: clamp(1.5rem, 2vw, 2rem);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.panel__header {
+  margin-bottom: 1.5rem;
+}
+
+.panel__subtitle {
+  margin-top: 0.5rem;
+  color: rgba(245, 247, 250, 0.75);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+
+table caption {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+table th,
+table td {
+  padding: 0.65rem 0.75rem;
+  text-align: right;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+table th:first-child,
+table td:first-child {
+  text-align: left;
+}
+
+table thead th {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  color: rgba(245, 247, 250, 0.8);
+}
+
+.frontier {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.frontier figure {
+  margin: 0;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.frontier img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.frontier figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: rgba(245, 247, 250, 0.75);
+}
+
+.frontier__notes {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.frontier__notes h3 {
+  margin-top: 0;
+}
+
+.frontier__notes ul,
+.frontier__notes ol {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.frontier__notes li + li {
+  margin-top: 0.5rem;
+}
+
+.footer {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: rgba(245, 247, 250, 0.65);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 960px) {
+  main {
+    grid-template-columns: repeat(6, 1fr);
+    align-items: start;
+  }
+
+  .panel {
+    grid-column: span 6;
+  }
+
+  #frontier.panel {
+    grid-column: span 6;
+  }
+
+  .frontier {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  main {
+    padding: 2rem 1rem;
+  }
+
+  table {
+    min-width: 100%;
+  }
+}

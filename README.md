@@ -45,3 +45,17 @@ python scripts/describe.py
 ```
 
 or by adapting the in-notebook examples from this README to your preferred analysis environment.
+
+## Efficient frontier analysis
+
+To understand the diversification benefits between Samsung Electronics, Apple, and NVIDIA, we compute the annualised mean-variance efficient frontier using daily close-to-close returns. The resulting curve shows the minimum achievable volatility for any target return that blends the three equities, while the individual points display each asset's standalone risk/return trade-off. The star marks the global minimum variance portfolio.
+
+![Efficient frontier for the three equities](figures/efficient_frontier.svg)
+
+Reproduce the figure with:
+
+```bash
+python scripts/efficient_frontier.py
+```
+
+The script aligns trading days with complete data across all tickers, annualises their average returns and covariance, and saves the plot to `figures/efficient_frontier.svg`.

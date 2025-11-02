@@ -1,0 +1,38 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'>
+<style>text{font-family:Arial,sans-serif;font-size:14px;}</style>
+<rect x='0' y='0' width='800' height='600' fill='#ffffff' stroke='none'/>
+<line x1='80' y1='520' x2='720' y2='520' stroke='#333' stroke-width='2'/>
+<line x1='80' y1='80' x2='80' y2='520' stroke='#333' stroke-width='2'/>
+<line x1='80.00' y1='80' x2='80.00' y2='520' stroke='#ddd' stroke-width='1'/>
+<text x='80.00' y='545' text-anchor='middle'>22.33%</text>
+<line x1='240.00' y1='80' x2='240.00' y2='520' stroke='#ddd' stroke-width='1'/>
+<text x='240.00' y='545' text-anchor='middle'>29.67%</text>
+<line x1='400.00' y1='80' x2='400.00' y2='520' stroke='#ddd' stroke-width='1'/>
+<text x='400.00' y='545' text-anchor='middle'>37.02%</text>
+<line x1='560.00' y1='80' x2='560.00' y2='520' stroke='#ddd' stroke-width='1'/>
+<text x='560.00' y='545' text-anchor='middle'>44.36%</text>
+<line x1='720.00' y1='80' x2='720.00' y2='520' stroke='#ddd' stroke-width='1'/>
+<text x='720.00' y='545' text-anchor='middle'>51.70%</text>
+<line x1='80' y1='520.00' x2='720' y2='520.00' stroke='#ddd' stroke-width='1'/>
+<text x='70' y='525.00' text-anchor='end'>21.97%</text>
+<line x1='80' y1='410.00' x2='720' y2='410.00' stroke='#ddd' stroke-width='1'/>
+<text x='70' y='415.00' text-anchor='end'>38.56%</text>
+<line x1='80' y1='300.00' x2='720' y2='300.00' stroke='#ddd' stroke-width='1'/>
+<text x='70' y='305.00' text-anchor='end'>55.15%</text>
+<line x1='80' y1='190.00' x2='720' y2='190.00' stroke='#ddd' stroke-width='1'/>
+<text x='70' y='195.00' text-anchor='end'>71.75%</text>
+<line x1='80' y1='80.00' x2='720' y2='80.00' stroke='#ddd' stroke-width='1'/>
+<text x='70' y='85.00' text-anchor='end'>88.34%</text>
+<path d='M88.25,520.00L84.72,511.02L82.17,502.04L80.59,493.06L80.00,484.08L80.41,475.10L81.80,466.12L84.18,457.14L87.53,448.16L91.83,439.18L97.05,430.20L103.17,421.22L110.15,412.24L117.97,403.27L126.58,394.29L135.94,385.31L146.02,376.33L156.78,367.35L168.18,358.37L180.18,349.39L192.75,340.41L205.85,331.43L219.46,322.45L233.52,313.47L248.03,304.49L262.95,295.51L278.24,286.53L293.89,277.55L309.88,268.57L326.18,259.59L342.77,250.61L359.63,241.63L376.75,232.65L394.10,223.67L411.68,214.69L429.47,205.71L447.46,196.73L465.62,187.76L483.97,178.78L502.47,169.80L521.12,160.82L539.92,151.84L558.86,142.86L577.92,133.88L597.10,124.90L616.40,115.92L635.80,106.94L655.31,97.96L674.91,88.98L694.60,80.00' fill='none' stroke='#1f77b4' stroke-width='3'/>
+<circle cx='277.73' cy='497.48' r='6' fill='#ff7f0e' stroke='none'/>
+<text x='285.73' y='489.48'>005930.KS</text>
+<circle cx='232.15' cy='520.00' r='6' fill='#ff7f0e' stroke='none'/>
+<text x='240.15' y='512.00'>AAPL</text>
+<circle cx='720.00' cy='80.00' r='6' fill='#ff7f0e' stroke='none'/>
+<text x='728.00' y='72.00'>NVDA</text>
+<polygon points='72.00,483.26 80.00,471.26 88.00,483.26 80.00,495.26' fill='#2ca02c' stroke='none'/>
+<text x='90.00' y='488.26'>Minimum variance</text>
+<text x='400.00' y='50' text-anchor='middle' font-size='20'>Efficient Frontier (Annualised)</text>
+<text x='400.00' y='580' text-anchor='middle'>Annualised volatility</text>
+<text transform='translate(30,300.00) rotate(-90)' text-anchor='middle'>Annualised return</text>
+</svg>
